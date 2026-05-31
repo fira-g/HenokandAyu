@@ -133,7 +133,7 @@ export default function Lightbox() {
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex flex-col select-none max-h-full w-full"
+      className="fixed inset-0 z-[100] flex flex-col select-none max-h-dvh w-full"
       style={{
         background: "rgba(10,5,2,0.97)",
         WebkitTapHighlightColor: "transparent",
