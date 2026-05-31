@@ -1,4 +1,4 @@
-import { WEDDING } from '@/constants'
+import { WEDDING } from "@/constants";
 
 export default function HeroSection() {
   return (
@@ -13,8 +13,12 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-hero-gradient" />
 
       {/* Floating ornaments */}
-      <span className="absolute top-10 right-8 text-[#ffddaa]/50 text-2xl animate-float">✦</span>
-      <span className="absolute top-20 left-5 text-[#ffddaa]/40 text-base animate-float [animation-delay:2s]">❀</span>
+      <span className="absolute top-10 right-8 text-[#ffddaa]/50 text-2xl animate-float">
+        ✦
+      </span>
+      <span className="absolute top-20 left-5 text-[#ffddaa]/40 text-base animate-float [animation-delay:2s]">
+        ❀
+      </span>
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
@@ -23,16 +27,20 @@ export default function HeroSection() {
           The Wedding of
         </p>
         <h1 className="text-white text-[52px] font-light leading-[1.15] drop-shadow-lg">
-          {WEDDING.bride}
+          {WEDDING.groom}
           <br />
           <span className="italic text-[#f5d9a8]">&amp;</span>
           <br />
-          {WEDDING.groom}
+          {WEDDING.bride}
         </h1>
         <p className="text-[#ffddaa]/80 ornament mt-3 mb-4">— ✦ —</p>
-        <p className="font-sans text-[#ffe5c0]/90 text-sm tracking-[3px]">{WEDDING.dateLabel.toUpperCase()}</p>
-        <p className="font-sans text-[#ffe0b0]/70 text-[13px] mt-1">{WEDDING.venue} · {WEDDING.city}</p>
+        <p className="font-sans text-[#ffe5c0]/90 text-sm tracking-[3px]">
+          {WEDDING.dateLabel.toUpperCase()}
+        </p>
+        <p className="font-sans text-[#ffe0b0]/70 text-[13px] mt-1">
+          {WEDDING.venue} · {WEDDING.city}
+        </p>
       </div>
     </div>
-  )
+  );
 }
