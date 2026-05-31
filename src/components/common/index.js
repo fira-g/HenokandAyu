@@ -1,0 +1,5 @@
+export { default as Ornament }      from './Ornament'
+export { default as SectionTitle }  from './SectionTitle'
+export { default as PageHeader }    from './PageHeader'
+export { default as AlertSuccess }  from './AlertSuccess'
+export { default as BackToHome } from './BackToHome'
