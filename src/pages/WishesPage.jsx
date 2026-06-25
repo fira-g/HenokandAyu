@@ -1,7 +1,16 @@
-import { PageHeader, BackToHome } from '@/components/common'
-import { WishForm, AudioRecorder, WishesFeed } from '@/components/wishes'
+import { PageHeader, BackToHome } from "@/components/common";
+import { WishForm, AudioRecorder, WishesFeed } from "@/components/wishes";
+import { useMusic } from "../context/MusicContext";
+import { useEffect } from "react";
 
 export default function WishesPage() {
+  const { pauseMusic, playMusic } = useMusic();
+  useEffect(() => {
+    pauseMusic();
+    return () => {
+      playMusic();
+    };
+  }, []);
   return (
     <div className="animate-fade-up">
       <PageHeader
@@ -19,5 +28,5 @@ export default function WishesPage() {
       </div>
       <BackToHome />
     </div>
-  )
+  );
 }

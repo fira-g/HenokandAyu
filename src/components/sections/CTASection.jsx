@@ -5,19 +5,19 @@ export default function CTASection() {
 
   return (
     <section className="px-6 pb-12">
-      <p className="font-sans text-gold-400 text-[11px] tracking-[4px] uppercase text-center mb-5">
+      <p className="font-sans text-gold-400 text-[13px] tracking-[4px] uppercase text-center mb-5">
         Join the celebration
       </p>
       <button
         className="btn-primary w-full mb-3"
         onClick={() => {
-          navigate("/gallery");
+          navigate("/wishes");
           window.scroll(0, 0);
         }}
       >
-        View Gallery
+        Share Wishes
       </button>
-      <div className="flex gap-3">
+      <div className="flex flex-row-reverse gap-3">
         <button
           className="btn-outline flex-1"
           onClick={() => {
@@ -30,11 +30,11 @@ export default function CTASection() {
         <button
           className="btn-outline flex-1"
           onClick={() => {
-            navigate("/wishes");
+            navigate("/gallery");
             window.scroll(0, 0);
           }}
         >
-          Share Wishes
+          View Gallery
         </button>
       </div>
     </section>

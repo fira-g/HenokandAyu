@@ -1,5 +1,6 @@
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useAdminStore } from "@/store";
+import MusicButton from "../common/MusicButton";
 
 /**
  * Root layout — no bottom nav.
@@ -52,7 +53,7 @@ export default function AppShell() {
             title={isAuth ? "Admin Dashboard" : "Admin Login"}
             className="fixed z-50 flex items-center gap-2 shadow-xl transition-all duration-300 active:scale-95 hover:scale-105"
             style={{
-              bottom: 28,
+              bottom: 12,
               right: "max(24px, calc(50vw - 240px + 16px))", // stays inside the card on desktop
               background: "linear-gradient(135deg, #3d2b1f 0%, #5c3d26 100%)",
               borderRadius: 50,
@@ -72,6 +73,19 @@ export default function AppShell() {
             )}
           </button>
         )}
+        <div
+          className="fixed z-50 flex items-center gap-2 shadow-xl bg-transparent transition-all duration-300 "
+          style={{
+            bottom: 12,
+            left: "max(24px, calc(50vw - 240px + 16px))", // stays inside the card on desktop
+            // background: "linear-gradient(135deg, #3d2b1f 0%, #5c3d26 100%)",
+            borderRadius: 50,
+            padding: "11px 20px 11px 14px",
+            boxShadow: "0 8px 32px rgba(60,30,10,0.35)",
+          }}
+        >
+          <MusicButton />
+        </div>
       </div>
     </div>
   );

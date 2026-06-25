@@ -1,45 +1,38 @@
 // ─── Wedding Info ────────────────────────────────────────────────────────────
 export const WEDDING = {
   bride: "Ayantu",
-  groom: "Eyob",
-  date: new Date("2026-06-27T16:00:00"),
-  dateLabel: "June 27, 2026",
-  venue: "St. Mary's Cathedral",
-  city: "Addis Ababa",
+  groom: "Henok",
+  date: new Date("2026-06-28T16:00:00"),
+  dateLabel: "June 28, 2026",
+  venue: "Ajip Full Gospel Church",
+  city: "Jimma, Ethiopia",
   quote:
     '"Two are better than one… for if they fall, one will lift up the other."',
   verse: "Ecclesiastes 4:9",
-  story: `What started as a chance encounter at a rainy bookshop in Addis became
-the greatest story either of us ever read. Ayantu was reaching for the same book —
-Eyob had already claimed it, but gladly gave it up. That was the first of many
-gifts they would give each other.`,
+  story: `This life journey started with a simple "Hi" on social media.
+When Henok first saw Ayantu's profile, he sent a message, but there was no reply. He didn't give up. After several attempts, Ayantu finally responded, and what began as a simple conversation soon turned into hours of talking, sharing, and getting to know one another.
+As we spent more time together and eventually met in person, we realized we had found something special. What started with a message became a friendship, then a love story, and now a lifetime together.`,
 };
 
 // ─── Event Timeline ───────────────────────────────────────────────────────────
 export const TIMELINE = [
   {
-    time: "2:00 PM",
-    event: "Guest Arrival",
-    detail: "Doors open, music begins",
-    emoji: "🕑",
-  },
-  {
-    time: "4:00 PM",
-    event: "Ceremony",
-    detail: "St. Mary's Cathedral",
+    time: "4:00 LT",
+    event: "Ceremony & wedding vows",
+    detail: "Ajip Full Gospel Church",
     emoji: "💍",
   },
   {
-    time: "6:30 PM",
-    event: "Cocktail Hour",
-    detail: "Garden Terrace",
-    emoji: "🥂",
+    time: "7:00 LT",
+    event: "Lunch",
+    detail: "Aramaic Hotel",
+    emoji: "🍽",
   },
   {
     time: "8:00 PM",
-    event: "Reception",
-    detail: "Grand Ballroom",
-    emoji: "🎶",
+    event: "Worship & Thanksgiving",
+    detail: "Aramaic Hotel",
+    emoji: "✝️",
   },
 ];
 
