@@ -65,12 +65,7 @@ export const LOCAL_GALLERY = [
     category: "Her",
     caption: "Forever begins",
   },
-  {
-    id: "lg5",
-    url: "/gallery/f2.jpg",
-    category: "Her",
-    caption: "Forever begins",
-  },
+
   {
     id: "lg6",
     url: "/gallery/f4.jpg",
@@ -95,12 +90,7 @@ export const LOCAL_GALLERY = [
     category: "Together",
     caption: "Forever begins",
   },
-  {
-    id: "lg9",
-    url: "/gallery/b3.jpg",
-    category: "Together",
-    caption: "Forever begins",
-  },
+
   {
     id: "lg10",
     url: "/gallery/b4.jpg",

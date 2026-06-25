@@ -1,30 +1,20 @@
 import { useMusic } from "../../context/MusicContext";
+import { Play, Pause, Volume2, VolumeX, PlayCircle } from "lucide-react";
 
 export default function MusicButton() {
   const { isPlaying, isMuted, playMusic, pauseMusic, toggleMute, setVolume } =
     useMusic();
 
   return (
-    <div>
-      <button
-        className="text-lg"
-        onClick={() => (isPlaying ? pauseMusic() : playMusic())}
-      >
-        {isPlaying ? "⏸️" : "▶️"}
-      </button>
-
-      {/* <button onClick={toggleMute}>{isMuted ? "Unmute" : "Mute"}</button> */}
-
-      {/* <input
-        type="range"
-        size={100}
-        min="0"
-        max="1"
-        step="0.1"
-        defaultValue="0.3"
-        onChange={(e) => setVolume(Number(e.target.value))}
-      />
-      <p>🔊</p> */}
-    </div>
+    <button
+      className="text-lg"
+      onClick={() => (isPlaying ? pauseMusic() : playMusic())}
+    >
+      {isPlaying ? (
+        <Pause size={24} className="text-gold-400" />
+      ) : (
+        <PlayCircle size={24} className="text-gold-400" />
+      )}
+    </button>
   );
 }

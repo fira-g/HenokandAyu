@@ -62,9 +62,9 @@ export default function AppShell() {
             }}
           >
             <span style={{ fontSize: 18 }}>{isAuth ? "⚙️" : "🔐"}</span>
-            <span className="font-sans text-[11px] tracking-[2px] text-gold-200 uppercase">
+            {/* <span className="font-sans text-[11px] tracking-[2px] text-gold-200 uppercase">
               {isAuth ? "Dashboard" : "Admin"}
-            </span>
+            </span> */}
             {isAuth && (
               <span
                 className="w-2 h-2 rounded-full bg-green-400 ml-1"
@@ -74,13 +74,13 @@ export default function AppShell() {
           </button>
         )}
         <div
-          className="fixed z-50 flex items-center gap-2 shadow-xl bg-transparent transition-all duration-300 "
+          className="fixed z-50 flex items-center gap-2 shadow-xl bg-gold-900 transition-all duration-300 "
           style={{
             bottom: 12,
             left: "max(24px, calc(50vw - 240px + 16px))", // stays inside the card on desktop
             // background: "linear-gradient(135deg, #3d2b1f 0%, #5c3d26 100%)",
-            borderRadius: 50,
-            padding: "11px 20px 11px 14px",
+            borderRadius: 20,
+            padding: "11px",
             boxShadow: "0 8px 32px rgba(60,30,10,0.35)",
           }}
         >
